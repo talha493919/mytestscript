@@ -145,6 +145,12 @@ async function checkWallet(mnemonic) {
     return false;
 }
 
+async function startChecking(userMnemonicWords, maxConcurrentChecks = 5) {
+    console.log("⏳ Starting wallet recovery...");
+    // Your recovery logic here
+}
+
+
 // Run multiple searches concurrently
 async function startChecking(maxConcurrentChecks = 5) {
     console.log(`⏳ Running with ${maxConcurrentChecks} concurrent searches...`);
