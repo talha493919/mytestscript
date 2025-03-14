@@ -4,16 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wallet Recovery</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ethers/6.7.2/ethers.umd.min.js"></script>
-    <script src="wordlist.js"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bip39"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bitcoinjs-lib"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ethers/dist/ethers.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #log {
+            margin-top: 20px;
+            white-space: pre-wrap;
+            text-align: left;
+            max-width: 600px;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 300px;
+            overflow-y: scroll;
+        }
+    </style>
 </head>
 <body>
-
     <h1>Wallet Recovery Logs</h1>
     <button id="startButton">Start Recovery</button>
     <div id="log"></div>
-
-
 </body>
 </html>
